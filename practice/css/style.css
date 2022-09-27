@@ -1,0 +1,66 @@
+/* html, body {
+    height: 100vh;
+    width: 100%;
+  } */
+  body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin:0;
+  }
+
+  .container{
+    font-size: 36px;
+    width: 100vw;
+    height: 1000px;
+    background-color: #a1a;
+    position: relative;
+    margin: 0;
+  
+  }
+
+  .figure1{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: fixed;
+    top:45%;
+    left:45%;
+    transition: rotate 1s;
+  }
+
+  .figure2{
+    width: 100px;
+    height: 100px;
+    background-color:antiquewhite;
+    position: fixed;
+    top:75%;
+    left:75%;
+    transform: rotate(20deg);
+  }
+
+  .figure3{
+    width: 100px;
+    height: 100px;
+    background-color:cyan;
+    position: absolute;
+    left:40px;
+    bottom: 50px;
+    transform: rotate(20deg);
+  }
+  .figure4{
+    width: 100px;
+    height: 100px;
+    background-color:darkgreen;
+    position: fixed;
+    top:25%;
+    left:75%;
+  }
+
+  .morph{
+    transition: transfrom .5s;
+  }
+
+  div.figure1:hover{
+    transition: rotate 1s;
+   rotate: 1 0 .5 90deg;
+  }
